@@ -5,8 +5,14 @@ services:
     image: redis:alpine
     container_name: redis
     restart: always
+    volumes:
+     - redis_data:/data
     networks:
       - dedisalam
+
+volumes:
+  redis_data:
+    name: redis_data
 
 networks:
   dedisalam:
