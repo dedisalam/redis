@@ -1,7 +1,7 @@
 name: dedisalam
 
 services:
-  database-redis:
+  redis:
     image: redis:alpine
     container_name: redis
     restart: always
